@@ -1,0 +1,28 @@
+G:\Mi unidad\001 - Organizado\0.1 - Previsora\7- Automatizaciones\5- bot dian\
+│
+├── 📁 data\
+│   ├── 📁 manuales\          # Aquí pondrás PDFs de anexos técnicos, manuales DIAN
+│   ├── 📁 ejemplos\          # XML/JSON de ejemplo (correctos e incorrectos)
+│   ├── 📁 xsd\               # Esquemas XSD de la DIAN
+│   └── 📁 plantillas\        # Plantillas de documentos
+│
+├── 📁 knowledge_base\        # Base vectorial (ChromaDB) - se crea automáticamente
+│
+├── 📁 src\
+│   ├── __init__.py
+│   ├── config.py
+│   ├── agent.py
+│   ├── knowledge_manager.py
+│   ├── xml_validator.py
+│   └── utils.py
+│
+├── 📁 logs\                  # Logs de operación
+│
+├── 📁 output\                # Resultados de análisis
+│
+├── app.py                    # Interfaz Streamlit
+├── cli.py                    # Interfaz por línea de comandos
+├── requirements.txt
+├── .env                      # Variables de entorno (opcional)
+├── run.bat                   # Script de inicio Windows
+└── run.sh                    # Script de inicio Linux/Mac

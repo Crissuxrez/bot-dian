@@ -1,0 +1,10 @@
+flowchart TD
+    A[Usuario sube XML] --> B[Agente recibe documento]
+    B --> C[Validador: verifica encoding]
+    C --> D[Validador: verifica estructura]
+    D --> E[Validador: verifica totales]
+    E --> F{¿Hay errores?}
+    F -->|Sí| G[Buscar en Knowledge Base]
+    G --> H[Generar recomendaciones]
+    H --> I[Mostrar diagnóstico]
+    F -->|No| J[Mostrar éxito]
